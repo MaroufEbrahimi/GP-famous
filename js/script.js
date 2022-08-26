@@ -12,3 +12,7 @@ link.forEach((ele) => {
    ele.addEventListener('click', activeLink);
 });
 // End of header link activate
+
+function myFun() {
+   alert('Waiting For Future')
+}
