@@ -7,6 +7,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="css/style.css">
    <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
+   <link rel="stylesheet" href="assets/remixicon/remixicon.css">
    <script src="./js/script.js" defer></script>
    <title>GP Famous Site</title>
 </head>
@@ -22,10 +23,10 @@
          <div class="nav_link">
             <ul>
                <li><a class="linkHeader active" href="#">Home</a></li>
-               <li><a class="linkHeader" href="#about">About</a></li>
-               <li><a class="linkHeader" href="#services">Services</a></li>
-               <li><a class="linkHeader" href="#profile">Profile</a></li>
-               <li><a class="linkHeader" href="#team">Team</a></li>
+               <li><a onclick="myFun()" class="linkHeader" href="#about">About</a></li>
+               <li><a onclick="myFun()" class="linkHeader" href="#services">Services</a></li>
+               <li><a onclick="myFun()" class="linkHeader" href="#profile">Profile</a></li>
+               <li><a onclick="myFun()" class="linkHeader" href="#team">Team</a></li>
                <li><a href="#">Drop Down <i class="bi bi-chevron-down"></i></a>
                   <div class="drop_down">
                      <ul>
@@ -47,7 +48,7 @@
                      </ul>
                   </div>
                </li>
-               <li><a class="linkHeader" href="#contact">Contact</a></li>
+               <li><a onclick="myFun()" class="linkHeader" href="#contact">Contact</a></li>
             </ul>
          </div>
          <div class="getStarted_header">
@@ -56,9 +57,37 @@
       </div>
    </section><!-- End of header -->
 
-
-
-   <div style="height: 800px;"></div>
+   <!-- Showcase -->
+   <section class="showcase">
+      <div class="container">
+         <div class="showcase_title">
+            <h1>Powerful Digital<br />Solutions With Gp<span>.</span></h1>
+            <h2>We are team of talented digital marketers</h2>
+         </div>
+         <div class="showcase_boxes">
+            <div class="box">
+               <i class="ri-store-line"></i>
+               <h1><a href="#">Lorem Ipsum</a></h1>
+            </div>
+            <div class="box">
+               <i class="ri-bar-chart-box-line"></i>
+               <h1><a href="#">Dolor Sitema</a></h1>
+            </div>
+            <div class="box">
+               <i class="ri-calendar-todo-line"></i>
+               <h1><a href="#">Sedare Perspiciatis</a></h1>
+            </div>
+            <div class="box">
+               <i class="ri-paint-brush-line"></i>
+               <h1><a href="#">Magni Dolores</a></h1>
+            </div>
+            <div class="box">
+               <i class="ri-database-2-line"></i>
+               <h1><a href="#">Nemos Enimade</a></h1>
+            </div>
+         </div>
+      </div>
+   </section><!-- End of Showcase -->
 </body>
 
 </html>
