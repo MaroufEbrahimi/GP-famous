@@ -368,3 +368,92 @@ h6 {
    margin-left: 60px;
    font-size: 15px;
 }
+
+/* Services */
+.services {
+   margin-top: 4rem;
+   overflow: hidden;
+}
+
+.services_title {
+   line-height: 2.5em;
+   padding-bottom: 40px;
+}
+
+.services_title p {
+   font-size: 14px;
+   color: #aaa;
+   font-weight: 500;
+   padding: 0;
+   margin: 0 0 5px 0;
+   letter-spacing: 2px;
+   font-family: "Poppins", sans-serif;
+}
+
+.services_title p::after {
+   content: "";
+   width: 120px;
+   height: 1px;
+   display: inline-block;
+   background: var(--gen-color-hover);
+   margin: 4px 10px;
+}
+
+.services_title h1 {
+   font-size: 2.2rem;
+   color: #000;
+}
+
+.services_boxes {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+   grid-gap: 1.5rem;
+}
+
+.services_boxes .box {
+   text-align: center;
+   padding: 80px 20px;
+   border: 1px solid #ebebeb;
+   background: #fff;
+   transition: all .3s ease-in-out;
+}
+
+.services_boxes .box:hover {
+   transform: translateY(-10px);
+   box-shadow: 0px 0 25px 0 rgba(0, 0, 0, 0.1);
+   border-color: #fff;
+}
+
+.services_boxes .box div {
+   margin: 0 auto;
+   width: 64px;
+   height: 64px;
+   background: var(--gen-color);
+   border-radius: 4px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-bottom: 20px;
+   transition: .3s;
+}
+
+.services_boxes .box div i {
+   color: #151515;
+   font-size: 28px;
+   transition: .3s ease-in-out;
+}
+
+.services_boxes .box a {
+   color: #000;
+   transition: all .3s ease-in-out;
+}
+
+.services_boxes .box a:hover {
+   color: var(--gen-color);
+}
+
+.services_boxes .box p {
+   padding-top: 1.5rem;
+   font-size: 14px;
+   color: #848484;
+}
