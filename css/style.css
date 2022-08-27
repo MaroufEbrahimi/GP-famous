@@ -30,6 +30,11 @@ body {
    --gen-color-hover: #ffd584;
 }
 
+::selection {
+   background: var(--gen-color);
+   color: #fff;
+}
+
 .container {
    max-width: 1125px;
    margin: 0 auto;
@@ -209,7 +214,7 @@ h6 {
    position: relative;
    width: 100%;
    height: 100vh;
-   background: url('../assets/img/hero-bg.jpg');
+   background: url('../assets/img/showcase.jpg');
    background-size: cover;
 }
 
@@ -226,15 +231,15 @@ h6 {
 .showcase .container {
    position: relative;
    text-align: center;
-   padding-top: 170px;
+   padding-top: 140px;
 }
 
 .showcase_title h1 {
    color: #fff;
-   font-size: 3.7rem;
+   font-size: 3.5rem;
    font-family: "Poppins", sans-serif;
    font-weight: 700;
-   line-height: 74px;
+   line-height: 65px;
 }
 
 .showcase_title h2 {
@@ -245,7 +250,7 @@ h6 {
 
 .showcase_boxes {
    display: flex;
-   margin-top: 70px;
+   margin-top: 65px;
    text-align: center;
    align-items: center;
    justify-content: center;
@@ -254,8 +259,8 @@ h6 {
 .showcase_boxes .box {
    padding: 30px 20px;
    border: 1px solid rgba(255, 255, 255, 0.3);
-   width: 100%;
-   height: 24vh;
+   width: 170px;
+   height: 25vh;
    text-align: center;
    transition: .3s ease-in-out;
    margin: 12px;
@@ -286,4 +291,47 @@ h6 {
 
 .showcase_boxes .box a:hover {
    color: var(--gen-color);
+}
+
+/* About */
+.about {
+   margin-top: 3.5rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+   grid-gap: 2rem;
+}
+
+.about_text {
+   line-height: 1.6em;
+}
+
+.about_text h1 {
+   font-size: 1.7rem;
+   color: #444;
+   line-height: 1.3em;
+}
+
+.about_text .first_p {
+   margin-top: .8rem;
+   margin-bottom: 1.1rem;
+   font-size: 1rem;
+   font-style: italic;
+   color: #444;
+}
+
+.about_text_check {
+   margin-bottom: 1.3rem;
+}
+
+.about_text_check p {
+   line-height: 1.6em;
+}
+
+.about_text_check i {
+   font-size: 21px;
+   color: var(--gen-color);
+}
+
+.about_img img {
+   width: 100%;
 }
