@@ -335,3 +335,36 @@ h6 {
 .about_img img {
    width: 100%;
 }
+
+.features {
+   padding-top: 30px;
+}
+
+.features .about_img img {
+   min-height: 470px;
+   width: 100%;
+   object-fit: cover;
+}
+
+.about_text .about_text_box {
+   padding-left: 15px;
+   margin-bottom: 43px;
+}
+
+.about_text .about_text_box i {
+   float: left;
+   font-size: 48px;
+   color: var(--gen-color);
+}
+
+.about_text .about_text_box h3 {
+   font-size: 20px;
+   font-weight: 700;
+   margin: 5px 0 10px 60px;
+}
+
+.about_text .about_text_box p {
+   color: #848484;
+   margin-left: 60px;
+   font-size: 15px;
+}
