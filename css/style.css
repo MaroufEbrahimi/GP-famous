@@ -62,6 +62,11 @@ h6 {
    font-family: "Raleway", sans-serif;
 }
 
+section {
+   padding: 60px 0;
+   overflow: hidden;
+}
+
 /* Header */
 .header_section {
    position: fixed;
@@ -295,7 +300,7 @@ h6 {
 
 /* About */
 .about {
-   margin-top: 3.5rem;
+   margin-top: 1.5rem;
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(350px, auto));
    grid-gap: 2rem;
@@ -371,7 +376,7 @@ h6 {
 
 /* Services */
 .services {
-   margin-top: 4rem;
+   margin-top: 1rem;
    overflow: hidden;
 }
 
@@ -456,4 +461,41 @@ h6 {
    padding-top: 1.5rem;
    font-size: 14px;
    color: #848484;
+}
+
+.callToAction {
+   background: linear-gradient(rgba(2, 2, 2, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/img/cta-bg.jpg");
+   background-size: cover;
+   background-position: center center;
+   text-align: center;
+   color: #fff;
+}
+
+.callToAction h1 {
+   font-size: 2rem;
+   font-weight: 700;
+}
+
+.callToAction p {
+   padding: 1.4rem 0;
+   line-height: 1.5em;
+}
+
+.callToAction a {
+   background: transparent;
+   border: 2px solid #fff;
+   border-radius: 4px;
+   color: #fff;
+   font-family: "Raleway", sans-serif;
+   font-size: 1rem;
+   font-weight: 600;
+   padding: 8px 28px;
+   transition: all .3s ease-in-out;
+   display: inline-block;
+}
+
+.callToAction a:hover {
+   color: #151515;
+   background: var(--gen-color);
+   border-color: var(--gen-color);
 }
