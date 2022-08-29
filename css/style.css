@@ -67,6 +67,36 @@ section {
    overflow: hidden;
 }
 
+.section_title {
+   line-height: 2.5em;
+   padding-bottom: 40px;
+   text-transform: uppercase;
+}
+
+.section_title p {
+   font-size: 14px;
+   color: #aaa;
+   font-weight: 500;
+   padding: 0;
+   margin: 0 0 5px 0;
+   letter-spacing: 2px;
+   font-family: "Poppins", sans-serif;
+}
+
+.section_title p::after {
+   content: "";
+   width: 120px;
+   height: 1px;
+   display: inline-block;
+   background: var(--gen-color-hover);
+   margin: 4px 10px;
+}
+
+.section_title h1 {
+   font-size: 2.2rem;
+   color: #000;
+}
+
 /* Header */
 .header_section {
    position: fixed;
@@ -380,35 +410,6 @@ section {
    overflow: hidden;
 }
 
-.services_title {
-   line-height: 2.5em;
-   padding-bottom: 40px;
-}
-
-.services_title p {
-   font-size: 14px;
-   color: #aaa;
-   font-weight: 500;
-   padding: 0;
-   margin: 0 0 5px 0;
-   letter-spacing: 2px;
-   font-family: "Poppins", sans-serif;
-}
-
-.services_title p::after {
-   content: "";
-   width: 120px;
-   height: 1px;
-   display: inline-block;
-   background: var(--gen-color-hover);
-   margin: 4px 10px;
-}
-
-.services_title h1 {
-   font-size: 2.2rem;
-   color: #000;
-}
-
 .services_boxes {
    display: grid;
    grid-template-columns: repeat(auto-fit, minmax(300px, auto));
@@ -498,4 +499,93 @@ section {
    color: #151515;
    background: var(--gen-color);
    border-color: var(--gen-color);
+}
+
+/* Portfolio */
+.portfolio_btn {
+   text-align: center;
+}
+
+.portfolio_btn button {
+   background: transparent;
+   border: none;
+   font-size: 14px;
+   font-weight: bold;
+   text-transform: uppercase;
+   padding: 8px 15px;
+   cursor: pointer;
+   border-radius: 3px;
+   transition: all .3s ease-in-out;
+}
+
+#all_btn {
+   background: var(--gen-color);
+}
+
+.portfolio_btn button:hover {
+   background: var(--gen-color);
+}
+
+.portfolio_images {
+   margin-top: 2rem;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+   grid-gap: 1.5rem;
+}
+
+.portfolio_images .box {
+   overflow: hidden;
+   position: relative;
+}
+
+.portfolio_images .box img {
+   width: 100%;
+   height: 100%;
+   transition: all .3s ease-in-out;
+}
+
+.portfolio_images .box:hover img {
+   transform: scale(1.2);
+}
+
+.box_text {
+   position: absolute;
+   top: 0;
+   left: 0;
+   background: transparent;
+   width: 100%;
+   height: 100%;
+   transition: all .5s ease-in-out;
+}
+
+.box_text:hover {
+   background: rgba(0, 0, 0, 0.5);
+}
+
+.box_text h1 {
+   position: absolute;
+   width: 100%;
+   bottom: 23%;
+   left: 6%;
+   color: #fff;
+   opacity: 0;
+   transition: all .3s ease-in-out;
+}
+
+.box_text:hover h1 {
+   opacity: 1;
+}
+
+.box_text p {
+   position: absolute;
+   width: 100%;
+   bottom: 14%;
+   left: 6%;
+   color: #ebebeb;
+   opacity: 0;
+   transition: all .3s ease-in-out;
+}
+
+.box_text:hover p {
+   opacity: 1;
 }
