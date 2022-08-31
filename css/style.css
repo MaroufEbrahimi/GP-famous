@@ -589,3 +589,82 @@ section {
 .box_text:hover p {
    opacity: 1;
 }
+
+/* Team */
+.team_boxes {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+   grid-gap: 1.5rem;
+}
+
+.box_t {
+   background: #fff;
+   margin-bottom: 20px;
+   border-radius: 5px;
+   overflow: hidden;
+   box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.box_t img {
+   width: 100%;
+   overflow: hidden;
+}
+
+.box_t .team_text {
+   padding: 25px 15px;
+}
+
+.box_t .team_text h2 {
+   font-size: 18px;
+   color: #151515;
+   font-weight: 700;
+}
+
+.box_t .team_text p {
+   margin-top: 5px;
+   font-size: 13px;
+   color: #aaa;
+   font-weight: 400;
+   display: block;
+}
+
+.team_img {
+   position: relative;
+}
+
+.team_social {
+   position: absolute;
+   top: 70%;
+   text-align: center;
+   width: 100%;
+   height: 100%;
+   transition: .3s ease-in-out;
+   opacity: 0;
+}
+
+.box_t:hover .team_social {
+   opacity: 1;
+   top: 77%;
+}
+
+.team_social a {
+   color: #484848;
+   background: rgba(255, 255, 255, .8);
+   width: 36px;
+   height: 36px;
+   margin: 0 3px;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+   border-radius: 4px;
+   transition: .3s ease-in-out;
+}
+
+.team_social a:hover {
+   color: #151515;
+   background: var(--gen-color);
+}
+
+.team_social i {
+   font-size: 18px;
+}
