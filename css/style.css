@@ -668,3 +668,29 @@ section {
 .team_social i {
    font-size: 18px;
 }
+
+.copyright {
+
+   background: #000;
+   color: #fff;
+   text-align: center;
+   padding: 30px 0;
+}
+
+.credits {
+   text-align: center;
+   font-size: 13px;
+   color: #fff;
+}
+
+.credits p {
+   padding-top: 10px;
+}
+
+.credits a {
+   color: var(--gen-color);
+}
+
+.credits a:hover {
+   color: var(--gen-color-hover);
+}
