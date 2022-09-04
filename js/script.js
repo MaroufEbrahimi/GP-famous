@@ -76,3 +76,74 @@ function webImages() {
       }
    }
 }
+
+// Portfolio Gallery
+let model = document.getElementById('myModal');
+let modelImg = document.getElementById('img01');
+
+let plus_1 = document.getElementById('plus_1');
+let img_1 = document.getElementById('img_1');
+plus_1.onclick = function () {
+   model.style.display = 'block';
+   modelImg.src = img_1.src;
+}
+
+let plus_2 = document.getElementById('plus_2');
+let img_2 = document.getElementById('img_2');
+plus_2.onclick = function () {
+   model.style.display = 'block';
+   modelImg.src = img_2.src;
+}
+
+let plus_3 = document.getElementById('plus_3');
+let img_3 = document.getElementById('img_3');
+plus_3.onclick = function () {
+   model.style.display = 'block';
+   modelImg.src = img_3.src;
+}
+
+let plus_4 = document.getElementById('plus_4');
+let img_4 = document.getElementById('img_4');
+plus_4.onclick = function () {
+   model.style.display = 'block';
+   modelImg.src = img_4.src;
+}
+let plus_5 = document.getElementById('plus_5');
+let img_5 = document.getElementById('img_5');
+plus_5.onclick = function () {
+   model.style.display = 'block';
+   modelImg.src = img_5.src;
+}
+
+let plus_6 = document.getElementById('plus_6');
+let img_6 = document.getElementById('img_6');
+plus_6.onclick = function () {
+   model.style.display = 'block';
+   modelImg.src = img_6.src;
+}
+
+let plus_7 = document.getElementById('plus_7');
+let img_7 = document.getElementById('img_7');
+plus_7.onclick = function () {
+   model.style.display = 'block';
+   modelImg.src = img_7.src;
+}
+
+let plus_8 = document.getElementById('plus_8');
+let img_8 = document.getElementById('img_8');
+plus_8.onclick = function () {
+   model.style.display = 'block';
+   modelImg.src = img_8.src;
+}
+
+let plus_9 = document.getElementById('plus_9');
+let img_9 = document.getElementById('img_9');
+plus_9.onclick = function () {
+   model.style.display = 'block';
+   modelImg.src = img_9.src;
+}
+
+let close = document.getElementById('close');
+close.onclick = function () {
+   model.style.display = 'none';
+}
