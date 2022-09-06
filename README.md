@@ -8,6 +8,9 @@
 # features
 * animations
 * bootstrap_icons
+* boxicons
+* remixicon
+* fade animation
 
 
 # Would you like to help and support me?
