@@ -147,3 +147,56 @@ let close = document.getElementById('close');
 close.onclick = function () {
    model.style.display = 'none';
 }
+
+   // back to top
+   (function scrollToTop() {
+      let up_arrow = document.getElementById('up_arrow');
+
+      function btnVisibality() {
+         if (window.scrollY <= 150) {
+            up_arrow.fadeOut();
+         } else {
+            up_arrow.fadeIn();
+         }
+      }
+
+      window.addEventListener('scroll', btnVisibality);
+      up_arrow.addEventListener('click', function () {
+         this.scrollTo(0, 0);
+      });
+   }());
+
+// fade in
+function myFadeIn(e) {
+   let eleOpacity = Number(getComputedStyle(e).opacity).toPrecision(2);
+   e.style.opacity = eleOpacity;
+   if (eleOpacity >= 1) {
+      return;
+   }
+
+   e.style.opacity = Number(eleOpacity) + 1;
+   setTimeout(() => {
+      myFadeIn(e);
+   }, 10);
+}
+// fade out
+function myFadeOut(e) {
+   let eleOpacity = Number(getComputedStyle(e).opacity).toPrecision(2);
+
+   if (eleOpacity <= 0) {
+      return;
+   }
+   setTimeout(() => {
+      myFadeOut(e);
+   }, 10);
+
+   e.style.opacity = Number(eleOpacity) - 1;
+}
+
+Element.prototype.fadeIn = function () {
+   myFadeIn(this);
+}
+
+Element.prototype.fadeOut = function () {
+   myFadeOut(this);
+}
