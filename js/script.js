@@ -1,9 +1,4 @@
 
-function myFun() {
-   alert('Waiting For Future')
-}
-
-
 // hader link activate
 const link = document.querySelectorAll('.linkHeader');
 function activeLink() {
@@ -22,7 +17,7 @@ var btn_all = document.getElementById('all_btn');
 var app_btn = document.getElementById('app_btn');
 var card_btn = document.getElementById('card_btn');
 var web_btn = document.getElementById('web_btn');
-var element = document.getElementsByClassName('box');
+var element = document.getElementsByClassName('portfolio_box');
 
 // show all images
 function allImages() {
@@ -37,7 +32,7 @@ function allImages() {
 // show app images
 function appImages() {
    for (a in element) {
-      if (element[a].className == 'box app') {
+      if (element[a].className == 'portfolio_box app') {
          element[a].style.display = "grid";
          app_btn.style.backgroundColor = '#ffc451';
          btn_all.style.backgroundColor = 'transparent';
@@ -51,7 +46,7 @@ function appImages() {
 // show card images
 function cardImages() {
    for (var a in element) {
-      if (element[a].className == 'box card') {
+      if (element[a].className == 'portfolio_box card') {
          element[a].style.display = "grid";
          card_btn.style.backgroundColor = '#ffc451';
          app_btn.style.backgroundColor = 'transparent';
@@ -65,7 +60,7 @@ function cardImages() {
 // show web images
 function webImages() {
    for (a in element) {
-      if (element[a].className == 'box web') {
+      if (element[a].className == 'portfolio_box web') {
          element[a].style.display = "grid";
          web_btn.style.backgroundColor = '#ffc451';
          app_btn.style.backgroundColor = 'transparent';
@@ -78,7 +73,7 @@ function webImages() {
 }
 
 // Portfolio Gallery
-let model = document.getElementById('myModal');
+let model = document.getElementById('myModel');
 let modelImg = document.getElementById('img01');
 
 let plus_1 = document.getElementById('plus_1');
@@ -143,10 +138,30 @@ plus_9.onclick = function () {
    modelImg.src = img_9.src;
 }
 
-let close = document.getElementById('close');
-close.onclick = function () {
+let closeBtn = document.getElementById('closeBtn');
+closeBtn.onclick = function () {
    model.style.display = 'none';
 }
+
+// End of Portfolio
+
+// Swiper
+new Swiper('.testimonials-slider', {
+   speed: 700,
+   loop: true,
+   autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+   },
+   slidesPerView: 'auto',
+   pagination: {
+      el: '.swiper-pagination',
+      type: 'bullets',
+      clickable: true,
+   }
+})
+
+   // End of swiper
 
    // back to top
    (function scrollToTop() {
@@ -200,3 +215,4 @@ Element.prototype.fadeIn = function () {
 Element.prototype.fadeOut = function () {
    myFadeOut(this);
 }
+// End of back to top
