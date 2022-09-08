@@ -5,11 +5,15 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="css/style.css">
+   <!-- links -->
    <link rel="stylesheet" href="assets/bootstrap-icons/bootstrap-icons.css">
    <link rel="stylesheet" href="assets/remixicon/remixicon.css">
    <link rel="stylesheet" href="assets/boxicons/css/boxicons.min.css">
-   <script src="./js/script.js" defer></script>
+   <link rel="stylesheet" href="assets/swiper/swiper-bundle.min.css">
+
+   <!-- link of main css -->
+   <link rel="stylesheet" href="css/style.css">
+
    <title>GP Famous Site</title>
 </head>
 
@@ -220,7 +224,7 @@
             <button id="web_btn" onclick="webImages()">web</button>
          </div>
          <div class="portfolio_images">
-            <div class="box app">
+            <div class="portfolio_box app">
                <img id="img_1" src="./assets/img/portfolio/portfolio-4.jpg" alt="">
                <div class="box_text">
                   <h4>App1</h4>
@@ -230,7 +234,7 @@
                   </div>
                </div>
             </div>
-            <div class="box app">
+            <div class="portfolio_box app">
                <img id="img_2" src="./assets/img/portfolio/portfolio-2.jpg" alt="">
                <div class="box_text">
                   <h4>App2</h4>
@@ -240,7 +244,7 @@
                   </div>
                </div>
             </div>
-            <div class="box app">
+            <div class="portfolio_box app">
                <img id="img_3" src="./assets/img/portfolio/portfolio-3.jpg" alt="">
                <div class="box_text">
                   <h4>App3</h4>
@@ -250,7 +254,7 @@
                   </div>
                </div>
             </div>
-            <div class="box web">
+            <div class="portfolio_box web">
                <img id="img_4" src="./assets/img/portfolio/portfolio-1.jpg" alt="">
                <div class="box_text">
                   <h4>Web1</h4>
@@ -260,7 +264,7 @@
                   </div>
                </div>
             </div>
-            <div class="box web">
+            <div class="portfolio_box web">
                <img id="img_5" src="./assets/img/portfolio/portfolio-5.jpg" alt="">
                <div class="box_text">
                   <h4>Web2</h4>
@@ -270,7 +274,7 @@
                   </div>
                </div>
             </div>
-            <div class="box web">
+            <div class="portfolio_box web">
                <img id="img_6" src="./assets/img/portfolio/portfolio-6.jpg" alt="">
                <div class="box_text">
                   <h4>Web3</h4>
@@ -280,7 +284,7 @@
                   </div>
                </div>
             </div>
-            <div class="box card">
+            <div class="portfolio_box card">
                <img id="img_7" src="./assets/img/portfolio/portfolio-7.jpg" alt="">
                <div class="box_text">
                   <h4>Card1</h4>
@@ -290,7 +294,7 @@
                   </div>
                </div>
             </div>
-            <div class="box card">
+            <div class="portfolio_box card">
                <img id="img_8" src="./assets/img/portfolio/portfolio-8.jpg" alt="">
                <div class="box_text">
                   <h4>Card2</h4>
@@ -300,7 +304,7 @@
                   </div>
                </div>
             </div>
-            <div class="box card">
+            <div class="portfolio_box card">
                <img id="img_9" src="./assets/img/portfolio/portfolio-9.jpg" alt="">
                <div class="box_text">
                   <h4>Card3</h4>
@@ -313,10 +317,91 @@
          </div>
       </div>
       <!-- Image model -->
-      <div id="myModal" class="modal">
-         <span id="close" class="close"><i class="bi bi-x"></i></span>
-         <img class="modal-content" id="img01">
+      <div id="myModel" class="model">
+         <span id="closeBtn" class="closeBtn"><i class="bi bi-x"></i></span>
+         <img class="model-content" id="img01">
          <div id="caption"></div>
+      </div>
+   </section>
+
+   <!-- Testimonials -->
+   <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="zoom-in">
+         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
+            <div class="swiper-wrapper">
+               <div class="swiper-slide">
+                  <div class="testimonial-item">
+                     <img src="./assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="testimonial">
+                     <h3>Marouf Famous</h3>
+                     <h4>Fron End Developer</h4>
+                     <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur laboriosam quod enim iste
+                        doloremque necessitatibus et, ipsam saepe in doloribus.
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="swiper-slide">
+                  <div class="testimonial-item">
+                     <img src="./assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="testimonial">
+                     <h3>Marouf Famous</h3>
+                     <h4>Fron End Developer</h4>
+                     <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur laboriosam quod enim iste
+                        doloremque necessitatibus et, ipsam saepe in doloribus.
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="swiper-slide">
+                  <div class="testimonial-item">
+                     <img src="./assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="testimonial">
+                     <h3>Marouf Famous</h3>
+                     <h4>Fron End Developer</h4>
+                     <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur laboriosam quod enim iste
+                        doloremque necessitatibus et, ipsam saepe in doloribus.
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="swiper-slide">
+                  <div class="testimonial-item">
+                     <img src="./assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="testimonial">
+                     <h3>Marouf Famous</h3>
+                     <h4>Fron End Developer</h4>
+                     <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur laboriosam quod enim iste
+                        doloremque necessitatibus et, ipsam saepe in doloribus.
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                     </p>
+                  </div>
+               </div>
+
+               <div class="swiper-slide">
+                  <div class="testimonial-item">
+                     <img src="./assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="testimonial">
+                     <h3>Marouf Famous</h3>
+                     <h4>Fron End Developer</h4>
+                     <p>
+                        <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur laboriosam quod enim iste
+                        doloremque necessitatibus et, ipsam saepe in doloribus.
+                        <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+                     </p>
+                  </div>
+               </div>
+
+            </div>
+            <div class="swiper-pagination"></div>
+         </div>
       </div>
    </section>
 
@@ -443,6 +528,12 @@
    <div id="up_arrow" class="backToTop">
       <a href="#"><i class="bi bi-arrow-up-short"></i></a>
    </div>
+
+
+   <!-- Link of javaScript -->
+   <script src="assets/glightbox/js/glightbox.min.js"></script>
+   <script src="assets/swiper/swiper-bundle.min.js"></script>
+   <script src="./js/script.js"></script>
 </body>
 
 </html>
