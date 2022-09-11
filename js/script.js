@@ -1,5 +1,22 @@
 
-// hader link activate
+// loading animation
+const loader = document.querySelector('.loader');
+const main = document.querySelector('.main');
+
+function initLoader() {
+   setTimeout(() => {
+      loader.style.opacity = 0;
+      loader.style.display = 'none';
+
+      main.style.display = 'block';
+      setTimeout(() => {
+         main.style.opacity = 1;
+      }, 20);
+   }, 1000);
+}
+initLoader();
+
+// header link activate
 const link = document.querySelectorAll('.linkHeader');
 function activeLink() {
    link.forEach((ele) => {
@@ -142,7 +159,6 @@ let closeBtn = document.getElementById('closeBtn');
 closeBtn.onclick = function () {
    model.style.display = 'none';
 }
-
 // End of Portfolio
 
 // Swiper
@@ -160,26 +176,26 @@ new Swiper('.testimonials-slider', {
       clickable: true,
    }
 })
+// End of swiper
 
-   // End of swiper
+// back to top
+window.onload = scrollToTop;
+function scrollToTop() {
+   let up_arrow = document.getElementById('up_arrow');
 
-   // back to top
-   (function scrollToTop() {
-      let up_arrow = document.getElementById('up_arrow');
-
-      function btnVisibality() {
-         if (window.scrollY <= 150) {
-            up_arrow.fadeOut();
-         } else {
-            up_arrow.fadeIn();
-         }
+   function btnVisibality() {
+      if (window.scrollY <= 150) {
+         up_arrow.fadeOut();
+      } else {
+         up_arrow.fadeIn();
       }
+   }
 
-      window.addEventListener('scroll', btnVisibality);
-      up_arrow.addEventListener('click', function () {
-         this.scrollTo(0, 0);
-      });
-   }());
+   window.addEventListener('scroll', btnVisibality);
+   up_arrow.addEventListener('click', function () {
+      this.scrollTo(0, 0);
+   });
+};
 
 // fade in
 function myFadeIn(e) {
