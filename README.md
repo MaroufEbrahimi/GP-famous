@@ -11,6 +11,8 @@
 * bootstrap_icons
 * boxicons
 * remixicon
+* glightbox
+* swiper
 
 
 # Would you like to help and support me?
