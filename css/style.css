@@ -147,9 +147,13 @@ section {
 .header_section {
    position: fixed;
    width: 100%;
-   background: rgba(0, 0, 0, 0.8);
+   background: transparent;
    height: 11.5vh;
    z-index: 2;
+}
+
+.header_sticky{
+   background: rgba(0, 0, 0, 0.8);
 }
 
 .header {
