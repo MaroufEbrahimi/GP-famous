@@ -12,7 +12,7 @@
 * boxicons
 * remixicon
 * glightbox
-* swiper
+* swiper slider
 
 
 # Would you like to help and support me?
