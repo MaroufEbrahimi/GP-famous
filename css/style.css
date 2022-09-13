@@ -336,7 +336,7 @@ section {
 .showcase_boxes {
    margin-top: 70px;
    display: grid;
-   grid-template-columns: repeat(5, 1fr);
+   grid-template-columns: repeat(5, 17%);
    text-align: center;
    align-items: center;
    justify-content: center;
@@ -344,9 +344,8 @@ section {
 
 .showcase_boxes .box {
    padding: 30px 20px;
-   margin: 12px;
+   margin: 10px;
    border: 1px solid rgba(255, 255, 255, 0.3);
-   /* width: 190px; */
    height: 25vh;
    text-align: center;
    transition: .3s ease-in-out;
