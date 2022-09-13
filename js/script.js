@@ -16,6 +16,12 @@ function initLoader() {
 }
 initLoader();
 
+// header scrollable
+const header_sticky = document.querySelector('header');
+window.addEventListener('scroll', function () {
+   header_sticky.classList.toggle('header_sticky', this.window.scrollY > 0);
+});
+
 // header link activate
 const link = document.querySelectorAll('.linkHeader');
 function activeLink() {
