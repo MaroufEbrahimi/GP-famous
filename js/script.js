@@ -161,6 +161,33 @@ closeBtn.onclick = function () {
 }
 // End of Portfolio
 
+// Count 
+let count_timer = document.getElementById('count_timer');
+let count_timer2 = document.getElementById('count_timer2');
+let count_timer3 = document.getElementById('count_timer3');
+let count_timer4 = document.getElementById('count_timer4');
+
+function countStart() {
+   if (Number(count_timer.innerHTML) >= 65) {
+      return;
+   }
+   count_timer.innerHTML = Number(count_timer.innerHTML) + 1;
+   count_timer2.innerHTML = Number(count_timer2.innerHTML) + 1;
+   count_timer3.innerHTML = Number(count_timer3.innerHTML) + 1;
+   count_timer4.innerHTML = Number(count_timer4.innerHTML) + 1;
+   setTimeout(() => {
+      countStart();
+   }, 100);
+}
+
+window.addEventListener('scroll', function () {
+   if (this.window.scrollY > 4250) {
+      countStart();
+   }
+})
+
+// End of Count
+
 // Swiper
 new Swiper('.testimonials-slider', {
    speed: 700,
