@@ -312,6 +312,7 @@ section {
 }
 
 .side_menu {
+   display: none;
    position: fixed;
    overflow: hidden;
    top: 0;
