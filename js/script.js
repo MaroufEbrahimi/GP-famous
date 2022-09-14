@@ -35,6 +35,16 @@ link.forEach((ele) => {
 });
 // End of header link activate
 
+// Open and Close side menu
+let side_menu = document.getElementById('side_menu');
+function openSlideMenu() {
+   side_menu.style.display = 'block';
+}
+
+function closeSide() {
+   side_menu.style.display = 'none';
+}
+
 // Portfolio
 var btn_all = document.getElementById('all_btn');
 var app_btn = document.getElementById('app_btn');
