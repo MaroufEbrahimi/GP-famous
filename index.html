@@ -67,6 +67,28 @@
             <div class="getStarted_header">
                <a href="#about">Get Started</a>
             </div>
+            <div class="mobile_res">
+               <span class="open_slide">
+                  <a href="#" onclick="openSlideMenu()">
+                     <svg id="svg" width='30' height='30'>
+                        <path d="M0,5 30,5" stroke='#fff' stroke-width='3' />
+                        <path d="M0,14 30,14" stroke='#fff' stroke-width='3' />
+                        <path d="M0,23 30,23" stroke='#fff' stroke-width='3' />
+                     </svg>
+                  </a>
+               </span>
+            </div>
+         </div>
+         <div class="side_menu" id="side_menu">
+            <div class="side_menu_links">
+               <a href="#" id="close_side_menu" onclick="closeSide()">&times;</a>
+               <a class="linkHeader active" href="#" onclick="closeSide()">Home</a>
+               <a class="linkHeader" href="#about" onclick="closeSide()">About</a>
+               <a class="linkHeader" href="#services" onclick="closeSide()">Services</a>
+               <a class="linkHeader" href="#portfolio" onclick="closeSide()">Portfolio</a>
+               <a class="linkHeader" href="#team" onclick="closeSide()">Team</a>
+               <a class="linkHeader" href="#contact" onclick="closeSide()">Contact</a>
+            </div>
          </div>
       </header><!-- End of header -->
 
