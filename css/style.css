@@ -383,6 +383,13 @@ section {
    padding-top: 140px;
 }
 
+.showcase_title {
+   position: absolute;
+   top: 36%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+}
+
 .showcase_title h1 {
    color: #fff;
    font-size: 3.5rem;
@@ -398,7 +405,7 @@ section {
 }
 
 .showcase_boxes {
-   margin-top: 70px;
+   margin-top: 230px;
    display: grid;
    grid-template-columns: repeat(5, 17%);
    text-align: center;
@@ -1187,9 +1194,14 @@ section {
       padding-bottom: 60px;
    }
 
+   .showcase_title {
+      top: auto;
+      margin: 5rem 0;
+   }
+
    .showcase_title h1{
       font-size: 2rem;
-      line-height: 30px;
+      line-height: 45px;
    }
 
    .showcase_boxes {
@@ -1215,6 +1227,7 @@ section {
    }
 
    .showcase_boxes {
+      margin-top: 200px;
       grid-template-columns: repeat(auto-fit, minmax(650px, auto));
    }
 
