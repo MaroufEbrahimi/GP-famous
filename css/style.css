@@ -83,13 +83,11 @@ section {
 }
 
 .section_title p {
-   font-size: 14px;
+   font: 500 14px "Poppins", sans-serif;
    color: #aaa;
-   font-weight: 500;
    padding: 0;
    margin: 0 0 5px 0;
    letter-spacing: 2px;
-   font-family: "Poppins", sans-serif;
 }
 
 .section_title p::after {
@@ -102,10 +100,8 @@ section {
 }
 
 .section_title h1 {
-   font-size: 36px;
+   font: 700 36px "Poppins", sans-serif;
    color: #151515;
-   font-family: "Poppins", sans-serif;
-   font-weight: 700;
 }
 
 /* Loading animation */
@@ -395,10 +391,7 @@ section {
 
 .showcase_title h1 {
    color: #fff;
-   font-size: 3.5rem;
-   font-family: "Poppins", sans-serif;
-   font-weight: 700;
-   line-height: 65px;
+   font: 700 3.5rem/65px "Poppins", sans-serif;
 }
 
 .showcase_title h2 {
