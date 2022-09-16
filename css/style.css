@@ -332,16 +332,18 @@ section {
    left: 15px;
    padding: 60px 0;
    background-color: #fff;
+   border-radius: 4px;
    overflow-y: auto;
    transition: all 0.5s ease-in-out;
-   animation: zoom .7s;
+   animation: zoom .5s;
 }
 
 #close_side_menu {
    position: absolute;
-   top: -10px;
-   right: 0;
+   top: 0px;
+   right: 6px;
    font-size: 54px;
+   font-weight: normal;
    color: #000;
 }
 
@@ -450,7 +452,7 @@ section {
    margin-top: 1.5rem;
    padding-top: 2rem;
    display: grid;
-   grid-template-columns: repeat(auto-fit, minmax(350px, auto));
+   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
    grid-gap: 2rem;
 }
 
@@ -1206,8 +1208,18 @@ section {
       grid-template-columns: repeat(auto-fit, minmax(330px, auto));
    }
 
+   .showcase_boxes .box {
+      height: 20vh;
+   }
+
    .count .container {
       grid-template-columns: 1fr;
+   }
+}
+
+@media (max-width: 1024px) {
+   .showcase_boxes .box {
+      height: auto;
    }
 }
 
@@ -1256,6 +1268,10 @@ section {
       grid-template-columns: repeat(auto-fit, minmax(550px, auto));
    }
 
+   .about_text h1 {
+      font-size: 25px;
+   }
+
    .contact_boxes .box form input {
       grid-column: 1 / 3;
    }
@@ -1268,22 +1284,45 @@ section {
    .showcase_boxes {
       grid-template-columns: repeat(auto-fit, minmax(370px, auto));
    }
+   .count_info>h1 {
+      font-size: 30px;
+   }
 }
 
 @media (max-width: 420px) {
    .container {
       max-width: 350px;
    }
+   .about_text>p:last-child {
+      font-size: 14px;
+   }
 }
 
 @media (max-width: 360px) {
    .container {
-      max-width: 300px;
+      max-width: 330px;
    }
    .showcase_boxes {
-      grid-template-columns: repeat(auto-fit, minmax(320px, auto));
+      grid-template-columns: repeat(auto-fit, minmax(290px, auto));
+   }
+   .about_text h1 {
+      font-size: 22px;
+   }
+   
+   .about_text_check p {
+      line-height: 1.3em;
+      font-size: 15px;
    }
    .portfolio_images .portfolio_box img {
       width: 90%;
+   }
+   .count_info_boxes {
+      grid-template-columns: repeat(auto-fit, minmax(180px, auto));
+   }
+}
+
+@media (max-width: 320px) {
+   .container {
+      max-width: 300px;
    }
 }
