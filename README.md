@@ -7,6 +7,7 @@
  
 
 # features
+* full responsive
 * animations
 * bootstrap_icons
 * boxicons
