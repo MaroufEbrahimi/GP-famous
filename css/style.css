@@ -403,7 +403,7 @@ section {
 }
 
 .showcase_boxes {
-   margin-top: 230px;
+   margin-top: 200px;
    display: grid;
    grid-template-columns: repeat(5, 17%);
    text-align: center;
