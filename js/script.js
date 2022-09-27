@@ -228,8 +228,10 @@ function scrollToTop() {
 
    function btnVisibality() {
       if (window.scrollY <= 150) {
+         up_arrow.style.cursor = 'default';
          up_arrow.fadeOut();
       } else {
+         up_arrow.style.cursor = 'pointer';
          up_arrow.fadeIn();
       }
    }
