@@ -1148,7 +1148,7 @@ section {
    cursor: pointer;
 }
 
-.backToTop a i {
+.backToTop i {
    color: #151515;
    font-size: 28px;
    font-weight: bold;
@@ -1158,7 +1158,7 @@ section {
    background: #151515;
 }
 
-.backToTop:hover a i {
+.backToTop:hover i {
    color: var(--gen-color);
 }
 
