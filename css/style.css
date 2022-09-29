@@ -154,7 +154,6 @@ section {
    position: fixed;
    width: 100%;
    background: transparent;
-   height: 11.5vh;
    z-index: 2;
 }
 
@@ -163,7 +162,7 @@ section {
 }
 
 .header {
-   padding-top: 16px;
+   padding: 16px 0 12px 0;
    display: flex;
    justify-content: space-between;
 }
@@ -180,7 +179,7 @@ section {
 }
 
 .nav_link li {
-   padding: 15px 18px;
+   padding: 12px 18px;
 }
 
 .nav_link a {
@@ -201,6 +200,10 @@ section {
 
 .nav_link a i {
    font-size: 12px;
+}
+
+.getStarted_header {
+   margin-top: -3px;
 }
 
 .getStarted_header a {
@@ -230,7 +233,7 @@ section {
    }
 
    to {
-      top: 50px;
+      top: 46px;
    }
 }
 
@@ -304,6 +307,7 @@ section {
 /* Mobile Navigation */
 .mobile_res {
    display: none;
+   margin-top: 4px;
 }
 
 .open_slide {
@@ -342,7 +346,7 @@ section {
    position: absolute;
    top: 0px;
    right: 6px;
-   font-size: 54px;
+   font-size: 44px;
    font-weight: normal;
    color: #000;
 }
@@ -1181,6 +1185,14 @@ section {
       max-width: 1000px;
       margin: 0 auto;
       overflow: hidden;
+   }
+
+   .header {
+      padding: 17px 0 15px 0;
+   }
+
+   .getStarted_header {
+      margin-top: 1px;
    }
 
    .showcase {
