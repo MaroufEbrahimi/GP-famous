@@ -157,7 +157,7 @@ section {
    z-index: 2;
 }
 
-.header_sticky{
+.header_sticky {
    background: rgba(0, 0, 0, 0.8);
 }
 
@@ -203,7 +203,7 @@ section {
 }
 
 .getStarted_header {
-   margin-top: -3px;
+   margin-top: 2px;
 }
 
 .getStarted_header a {
@@ -1198,7 +1198,7 @@ section {
    .showcase {
       height: auto;
       background-size: cover;
-      
+
    }
 
    .showcase .container {
@@ -1211,7 +1211,7 @@ section {
       margin: 5rem 0;
    }
 
-   .showcase_title h1{
+   .showcase_title h1 {
       font-size: 2rem;
       line-height: 45px;
    }
@@ -1267,12 +1267,12 @@ section {
       max-width: 600px;
    }
 
-   .showcase_title h1{
+   .showcase_title h1 {
       font-size: 1.5rem;
       line-height: 30px;
    }
 
-   .showcase_title h2{
+   .showcase_title h2 {
       font-size: 1rem;
    }
 
@@ -1293,9 +1293,11 @@ section {
    .container {
       max-width: 430px;
    }
+
    .showcase_boxes {
       grid-template-columns: repeat(auto-fit, minmax(370px, auto));
    }
+
    .count_info>h1 {
       font-size: 30px;
    }
@@ -1305,6 +1307,7 @@ section {
    .container {
       max-width: 350px;
    }
+
    .about_text>p:last-child {
       font-size: 14px;
    }
@@ -1314,20 +1317,24 @@ section {
    .container {
       max-width: 330px;
    }
+
    .showcase_boxes {
       grid-template-columns: repeat(auto-fit, minmax(290px, auto));
    }
+
    .about_text h1 {
       font-size: 22px;
    }
-   
+
    .about_text_check p {
       line-height: 1.3em;
       font-size: 15px;
    }
+
    .portfolio_images .portfolio_box img {
       width: 90%;
    }
+
    .count_info_boxes {
       grid-template-columns: repeat(auto-fit, minmax(180px, auto));
    }
