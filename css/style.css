@@ -1352,4 +1352,17 @@ form .form_box button:hover {
   .container {
     max-width: 300px;
   }
+
+  .services_boxes {
+    grid-template-columns: repeat(auto-fit, minmax(240px, auto));
+  }
+}
+
+@media (max-width: 280px) {
+  .showcase_boxes {
+    grid-template-columns: repeat(auto-fit, minmax(275px, auto));
+  }
+  .container {
+    max-width: 260px;
+  }
 }
