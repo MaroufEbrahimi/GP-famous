@@ -25,6 +25,8 @@ window.addEventListener("scroll", function () {
 const link = document.querySelectorAll(".linkHeader");
 const legoElement = document.getElementById("logo");
 const homeLink = document.querySelectorAll(".linkHeader")[0];
+const getStarted = document.getElementById("getStarted");
+const aboutLink = document.querySelectorAll(".linkHeader")[1];
 
 function activeLink() {
   link.forEach((ele) => {
@@ -42,8 +44,14 @@ function activateHomeLink() {
   // We use `.call` to set the value of `this` in the activeLink function
   activeLink.call(homeLink);
 }
-// Add event listener to the Lego element
+// Add event listener to the Logo element
 legoElement.addEventListener("click", activateHomeLink);
+
+// Active About when clicked get started button
+function activateAboutLink() {
+  activeLink.call(aboutLink);
+}
+getStarted.addEventListener("click", activateAboutLink);
 // ##_________ End of header link activate _________##
 
 // ##_________ Open and Close side menu _________##
