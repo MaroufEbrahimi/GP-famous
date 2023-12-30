@@ -1,4 +1,4 @@
-// loading animation
+// ##_________ loading animation _________##
 const loader = document.querySelector(".loader");
 const main = document.querySelector(".main");
 
@@ -15,14 +15,17 @@ function initLoader() {
 }
 initLoader();
 
-// header scrollable
+// ##_________ Header scrollable _________##
 const header_sticky = document.querySelector("header");
 window.addEventListener("scroll", function () {
   header_sticky.classList.toggle("header_sticky", this.window.scrollY > 0);
 });
 
-// header link activate
+// ##_________ Header link activate _________##
 const link = document.querySelectorAll(".linkHeader");
+const legoElement = document.getElementById("logo");
+const homeLink = document.querySelectorAll(".linkHeader")[0];
+
 function activeLink() {
   link.forEach((ele) => {
     ele.classList.remove("active");
@@ -32,9 +35,18 @@ function activeLink() {
 link.forEach((ele) => {
   ele.addEventListener("click", activeLink);
 });
-// End of header link activate
 
-// Open and Close side menu
+// This function will be called when the Logo element is clicked
+function activateHomeLink() {
+  // Here we call the `activeLink` function in the context of the homeLink
+  // We use `.call` to set the value of `this` in the activeLink function
+  activeLink.call(homeLink);
+}
+// Add event listener to the Lego element
+legoElement.addEventListener("click", activateHomeLink);
+// ##_________ End of header link activate _________##
+
+// ##_________ Open and Close side menu _________##
 let side_menu = document.getElementById("side_menu");
 function openSlideMenu() {
   side_menu.style.display = "block";
@@ -44,14 +56,14 @@ function closeSide() {
   side_menu.style.display = "none";
 }
 
-// Portfolio
+// ##_________ Portfolio _________##
 var btn_all = document.getElementById("all_btn");
 var app_btn = document.getElementById("app_btn");
 var card_btn = document.getElementById("card_btn");
 var web_btn = document.getElementById("web_btn");
 var element = document.getElementsByClassName("portfolio_box");
 
-// show all images
+// ##_________ Show all images _________##
 function allImages() {
   for (a in element) {
     element[a].style.display = "grid";
@@ -104,7 +116,7 @@ function webImages() {
   }
 }
 
-// Portfolio Gallery
+// ##_________ Portfolio Gallery _________##
 let model = document.getElementById("myModel");
 let modelImg = document.getElementById("img01");
 
@@ -174,9 +186,9 @@ let closeBtn = document.getElementById("closeBtn");
 closeBtn.onclick = function () {
   model.style.display = "none";
 };
-// End of Portfolio
+// ##_________ End of Portfolio _________##
 
-// Counter Scroll
+// ##_________ Counter Scroll _________##
 let counter_section = document.querySelector(".counter_section");
 let counters = document.querySelectorAll(".count_info_box .counter");
 
@@ -217,9 +229,9 @@ let coutnerObserver = new IntersectionObserver(
 );
 coutnerObserver.observe(counter_section);
 
-// End of Counter
+// ##_________ End of Counter _________##
 
-// Swiper
+// ##_________ Swiper _________##
 new Swiper(".testimonials-slider", {
   speed: 700,
   loop: true,
@@ -234,9 +246,9 @@ new Swiper(".testimonials-slider", {
     clickable: true,
   },
 });
-// End of swiper
+// ##_________ End of swiper _________##
 
-// back to top
+// ##_________ Back to top _________##
 window.onload = scrollToTop;
 function scrollToTop() {
   let up_arrow = document.getElementById("up_arrow");
@@ -257,7 +269,7 @@ function scrollToTop() {
   });
 }
 
-// fade in
+// ##_________ Fade in _________##
 function myFadeIn(e) {
   let eleOpacity = Number(getComputedStyle(e).opacity).toPrecision(2);
   e.style.opacity = eleOpacity;
@@ -291,4 +303,4 @@ Element.prototype.fadeIn = function () {
 Element.prototype.fadeOut = function () {
   myFadeOut(this);
 };
-// End of back to top
+// ##_________ End of back to top _________##
