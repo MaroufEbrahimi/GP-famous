@@ -38,6 +38,28 @@ link.forEach((ele) => {
   ele.addEventListener("click", activeLink);
 });
 
+// Active Link Scroll
+let sectionActiveScroll = document.querySelectorAll(".sectionActiveScroll");
+let activeLinkScroll = document.querySelectorAll(".activeLinkScroll");
+
+window.onscroll = () => {
+  sectionActiveScroll.forEach((sec) => {
+    let top = window.scrollY;
+    let offset = sec.offsetTop - 150;
+    let height = sec.offsetHeight;
+    let id = sec.getAttribute("id");
+
+    if (top >= offset && top < offset + height) {
+      activeLinkScroll.forEach((links) => {
+        links.classList.remove("active");
+        document
+          .querySelector(".activeLinkScroll[href*=" + id + "]")
+          .classList.add("active");
+      });
+    }
+  });
+};
+
 // This function will be called when the Logo element is clicked
 function activateHomeLink() {
   // Here we call the `activeLink` function in the context of the homeLink
