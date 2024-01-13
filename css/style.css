@@ -359,6 +359,10 @@ section {
   transition: 0.3s;
 }
 
+.side_menu_links a.active {
+  color: var(--gen-color);
+}
+
 .side_menu_links a:hover {
   background-color: var(--gen-color);
 }
