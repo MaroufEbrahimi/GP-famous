@@ -128,7 +128,7 @@ section {
   border-radius: 50%;
   margin: 0 5px;
   transform: translate3d(0);
-  animation: load 0.3s infinite alternate;
+  animation: load 0.3s infinite alternate-reverse;
 }
 
 .loader > span:nth-child(2) {
